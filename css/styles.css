@@ -1,38 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap");
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Barlow';
-    font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./../images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
+body {
+  font-family: "Barlow";
+  font-weight: 400;
+}
+
+/* Homepage */
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .side {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .right {
-    justify-content: space-between;
+  justify-content: center;
 }
 
-img {
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #000;
+.homepageH1 {
+  font-size: 64px;
+  margin: 10px 0;
 }
+
+p {
+  font-size: 22px;
+  padding: 0 50px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.portrait {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.portfolio {
+  text-decoration: none;
+  background-color: #179498;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  margin: 10px 0;
+}
+
+.icons {
+  display: flex;
+  margin: 10px 0;
+}
+
+.icon {
+  padding: 15px;
+  color: #179498;
+  border: 1px solid #179498;
+  border-radius: 50%;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* End of Homepage */
+
+/* Portfolio */
 
