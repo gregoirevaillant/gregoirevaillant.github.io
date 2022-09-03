@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* Global CSS (links, mails ... ############### */
+
+* {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #505050;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a.body_link {
+    color: #00909e;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+        a.body_link:hover{
+            opacity: 60%;
+        } 
+
+a.body_link_email {
+    color: #27496D;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+        a.body_link_email:hover {
+            opacity: 60%;
+        }
+
+a.body_link_button {
+    color: #fff;
+    background-color: #00909e;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    display: inline-block;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+        a.body_link_button:hover {
+            background-color: white;
+            color: #00909e;
+            border: 2px solid #00909e;
+        }
+
+span.important{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+span.body_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-top: 0.7rem;
+}
+
+/* Header ############### */
+
+header.header {
+    height: 100vh;
+}
+
+        div.top_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            height: 10%;
+        }
+
+                div.brand_name strong{
+                    width: 30%;
+                    font-family: 'Bebas Neue', sans-serif;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-size: 4rem;
+                }
+
+                nav.nav {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
+                        nav.nav a.nav_links {
+                            display: inline-block;
+                            color: #27496D;
+                            text-decoration: none;
+                        }
+                        
+                        nav.nav a.nav_links::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background: #27496D;
+                            transition: width .5s;
+                        }
+                        
+                        nav.nav a.nav_links:hover::after {
+                            width: 100%;
+                        }
+
+                        nav.nav a.target::after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            background: #27496D;
+                            transition: width .5s;
+                        }
+
+        div.middle_header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+                
+                /* #bg_home{
+                    background: url('/images/1_index/index_background_2.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                } */
+
+                #bg_services{
+                    background: url('../images/2_services/services_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+                #bg_events{
+                    background: url('../images/3_events/events_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+                #bg_news{
+                    background: url('../images/4_news/news_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+                #bg_publications{
+                    background: url('../images/5_publications/publications_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+                #bg_members{
+                    background: url('../images/6_members/members_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+                #bg_contact{
+                    background: url('../images/7_contact/contact_background.jpeg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    height: 60%;
+                }
+
+                        div p.page_name{
+                            color: #fff;
+                            font-size: 1.5rem;
+
+                            margin: 20px 0;
+                        }
+
+                        div p.page_quote{
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-family: 'Bebas Neue', sans-serif;
+                            font-size: 4rem;
+
+                            margin: 20px 0;
+                        }
+
+        div.bottom_header {
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            height: 30%;
+            margin: 0;
+        }
+
+                div h1{
+                    text-transform: uppercase;
+                    color: #142850;
+                    font-size: 2rem;
+                    text-decoration: underline;
+                    margin: 0 0;
+                }
+
+                p span.body_title {
+                    display: block;
+                }
+
+/* Stickie bar ############### */
+
+nav.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255);
+}
+
+        nav.sticky ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+                nav.sticky li{
+                    float: left;
+                    width: 20%;
+                    text-align: center;
+                }
+
+                        nav.sticky a{
+                            display: block; 
+                            text-decoration: none;
+                            border: 2px solid transparent;
+                            padding: 10px 0px;
+                            color: #fff;
+                            background-color: #00909e;
+                            transition: all 0.2s ease-in-out;
+                        }
+
+                        nav.sticky a:hover{
+                            color: #00909e;
+                            border: 2px solid #00909e;
+                            background-color: #fff;
+                        }
+
+/* Main ############### */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
+}
+
+        main div {
+            text-align: justify;
+            padding-top: 0.8rem;
+        }
+
+                section.content h2 {
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    color: #27496D;
+                    margin-top: 2rem;
+                }
+
+                section.content p {
+                    line-height: 1.5rem;
+                    margin: 1rem 0;
+                }
+
+                ul.list_body {
+                    padding-left: 3rem;
+                }
+
+                li.list_body {
+                    padding: 0.7rem 0;
+                }
+/* Footer ############### */
+
+footer.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+/* Citation */
+
+        div.quote {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 2px solid #505050;
+        }
+
+                div.quote p {
+                    font-size: 0.8rem;
+                    text-align: center;
+                    
+                }
+
+/* First part of the footer */
+
+        .top_footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: #00919e66;
+            
+            height: 80%;
+        }
+
+                .top_footer .top_footer_element_1 {
+                    font-size: 0.8rem;
+                }
+
+                        .top_footer_element_1 a.body_link_email{
+                            color: #27496D;
+                            font-weight: 700;
+                            font-size: 0.8rem;
+                            text-decoration: none;
+                        }
+
+                .top_footer .top_footer_element_3 {
+                    font-size: 0.8rem;
+                }
+                
+                        .top_footer_element_3 span.important{
+                            font-weight: 700;
+                            font-size: 0.8rem;
+                        }
+
+/* Second part of the footer */
+
+        .bottom_footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            height: 20%;
+        }
+
+                .bottom_footer p {
+                    font-size: 0.8rem;
+                }
+
+/* Unique modification ############### */
+/* Home ############### */
+
+header.header_home {
+    height: 100vh;
+}
+
+        .top_header_home {
+            height: 80%;
+            background: url('../images/1_index/index_background_2.jpeg');
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+                div.navbar_home {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 36px 25px;
+                    height: 10%;
+                }
+
+                .title_home {
+                    width: 100%;
+                    height: 90%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    padding: 3rem 5rem;
+                }
+
+                        .title_home p{
+                            color: white;
+                            font-size: 4rem;
+                            font-family: Bebas Neue;
+                            text-align: right;
+                        }
+
+    .bottom_header_home {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        padding: 0 4rem;
+
+    }
+
+            .bottom_header_home h1 {
+                color: #000;
+                font-family: bebas Neue;
+                font-size: 4rem;
+                text-decoration: none;
+            }
+            
+
+#part_1 img {
+    width: 250px;
+    float: right;
+    margin: 1rem 4rem;
+}
+
+#part_3 img {
+    width: 250px;
+    float: left;
+    margin: 1rem 4rem;
+}
+
+/* Services ############### */
+
+/* Events ############### */
+
+/* News ############### */
+
+#intro_news .intro_news_images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.intro_news_images img {
+    width: 250px;
+}
+
+#news_1 img {
+    width: 350px;
+    float: right;
+    margin: 1rem 4rem;
+}
+
+/* Publications ############### */
+
+#pub_1 img {
+    width: 250px;
+    float: right;
+    margin: 1rem 4rem;
+}
+
+#pub_2 img {
+    width: 250px;
+    float: left;
+    margin: 1rem 4rem;
+}
+
+#pub_3 img {
+    width: 250px;
+    float: right;
+    margin: 1rem 4rem;
+}
+
+/* Members ############### */
+
+/* Contact ############### */
