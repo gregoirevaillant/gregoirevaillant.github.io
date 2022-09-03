@@ -71,13 +71,23 @@ body {
         }
 
             .icon {
-              padding: 15px;
+              padding: 10px;
               color: #179498;
               border: 1px solid #179498;
               border-radius: 50%;
               margin: 10px;
               text-decoration: none;
             }
+
+                .icon:hover {
+                  box-shadow: #000 0px 0px 5px;
+                }
+
+            .icon img {
+              width: 30px;
+            }
+
+          
 
 /* End of Homepage */
 
