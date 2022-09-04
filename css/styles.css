@@ -182,3 +182,26 @@ body {
   .projects { grid-template-columns: repeat(3, 1fr); }
 }
 
+@media (max-width: 600px) {
+  .homepage {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .side {
+    width: 100%;
+  }
+
+  .homepageH1 {
+    text-align: center;
+  }
+
+  .icon:focus {
+    box-shadow: #000 0px 0px 5px;
+  }
+
+  .waviy strong {
+    display: block;
+  }
+}
