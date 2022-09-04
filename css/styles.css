@@ -187,6 +187,7 @@ body {
     flex-direction: column;
     height: auto;
     padding: 1rem;
+    overflow: hidden;
   }
 
   .side {
