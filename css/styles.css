@@ -161,6 +161,10 @@ body {
           margin: 2rem 0;
         }
 
+        .smallText {
+          font-size: 0.7rem;
+        }
+
         .buttonDiv {
           margin: 2rem 0;
         }
