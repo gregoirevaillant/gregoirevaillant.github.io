@@ -102,41 +102,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin: 1rem 0rem;
+  font-size: 4rem;
+  color: #179498;
 }
 
-    .waviy {
-      position: relative;
-      font-size: 60px;
-    }
-
-        .waviy span {
-          position: relative;
-          display: inline-block;
-          animation: waviy 1s infinite;
-          animation-delay: calc(.1s * var(--i));
-          font-size: 4rem;
-          color: #179498;
-          
-        }
-
-        .waviy strong {
-          position: relative;
-          display: inline-block;
-          font-size: 4rem;
-          color: #179498;
-          font-weight: 400;
-          padding: 0 0 1rem 0;
-        }
-
-    @keyframes waviy {
-      0%,40%,100% {
-        transform: translateY(0)
-      }
-      20% {
-        transform: translateY(-20px)
-      }
-    }
-    
 .projects {
   max-width: 90%;
   margin: 0 auto;
@@ -167,6 +137,10 @@ body {
 
         .buttonDiv {
           margin: 2rem 0;
+        }
+
+        .explication {
+          font-size: 0.7rem;
         }
 
             .projectButton {
