@@ -21,6 +21,7 @@ body {
   background-image: url(./../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
     .side {
@@ -161,6 +162,7 @@ body {
     flex-direction: column;
     height: 100%;
     padding: 1rem;
+    overflow: hidden;
   }
 
   .side {
