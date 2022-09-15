@@ -8,6 +8,7 @@
 body {
   font-family: "Barlow";
   font-weight: 400;
+  overflow: hidden;
 }
 
 /* Homepage */
