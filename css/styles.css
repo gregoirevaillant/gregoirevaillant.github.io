@@ -132,10 +132,6 @@ body {
           margin: 2rem 0;
         }
 
-            .imageNFT {
-              rotate: 90deg;
-            }
-
         .explication {
           font-size: 0.7rem;
         }
@@ -182,5 +178,8 @@ body {
 
   .waviy strong {
     display: block;
+  }
+  .portfolioTitle {
+    font-size: 1rem;
   }
 }
