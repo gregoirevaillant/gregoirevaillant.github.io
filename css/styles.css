@@ -160,8 +160,9 @@ body {
 @media (max-width: 600px) {
   .homepage {
     flex-direction: column;
-    height: 100%;
     padding: 1rem;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
 
   .side {
@@ -176,9 +177,6 @@ body {
     box-shadow: #000 0px 0px 5px;
   }
 
-  .waviy strong {
-    display: block;
-  }
   .portfolioTitle {
     font-size: 1rem;
   }
