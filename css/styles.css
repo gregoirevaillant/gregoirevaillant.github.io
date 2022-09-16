@@ -10,10 +10,6 @@ body {
   font-weight: 400;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 /* Homepage */
 
 .homepage {
@@ -165,8 +161,6 @@ html {
   .homepage {
     flex-direction: column;
     padding: 1rem;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
   }
 
   .side {
