@@ -101,9 +101,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 0;
   margin: 1rem 0rem;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #179498;
 }
 
