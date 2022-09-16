@@ -16,16 +16,6 @@ html {
 
 /* Homepage */
 
-.wrapper {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    height: 100vh;
-    overflow: scroll; 
-}
-
 .homepage {
   height: 100vh;
   display: flex;
