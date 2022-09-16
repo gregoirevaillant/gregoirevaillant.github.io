@@ -132,6 +132,7 @@ body {
         }
 
             .imageNFT {
+              rotate: 90deg;
             }
 
         .explication {
